@@ -1,0 +1,177 @@
+
+body{
+   background-color: #dd5e89 ;
+}
+
+    input{
+    margin-left:32%;
+}
+
+.card{
+    width:500px;
+    border-radius: 2%;
+}
+
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family:'Arial, Helvetica, sans-serif';
+    margin-top: 3vh;
+    color:rgb(220, 89, 146);
+    text-align: center;
+   
+}
+
+
+/* @import url(https://fonts.googleapis.com/css?family=Lemon&text=Loading…&display=swap); Font used is Lemon(https://www.google.com/fonts/specimen/Lemon) by Eduardo Tunni. */
+
+*, *:before {box-sizing: border-box}
+
+@supports (-ms-accelerator:true) {
+  body:before {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: block;
+  color: #985538;
+  background: #fff;
+  content: "Sorry, SVG animated transform not currently supported in IE/Edge";
+  font: normal 120%/1.5 sans-serif;
+  }
+}
+
+html, body {
+	font: normal 100%/1.5 cursive, serif;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	background: #DFBD99;
+}
+
+/* via https://css-tricks.com/centering-in-the-unknown/ */
+.center {
+	height: 100%;
+}
+
+.center:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+  min-width: 300px
+ }
+
+/*SVG Styling*/ 
+.chicken {
+	fill: #985538
+}	
+.swing {
+	fill: #f5f5f5
+}
+
+#swinging {
+	transform-origin: top center;
+	animation: swingme 2s ease-in-out 0s infinite;
+}
+	
+@keyframes swingme {
+	0%, 100% {
+		transform: rotate(10deg);
+	}	
+	50% {
+		transform: rotate(-10deg);
+	}	
+}
+
+#shadow {
+	fill: #333;
+	fill-opacity: .1;
+	animation: shadow 2s ease-in-out 0s infinite;
+}
+
+@keyframes shadow {
+	0%, 100% {
+		transform: translateX(-2em);
+	}
+	50% {
+		transform: translateX(2em);
+	}
+}
+
+#loading {
+	font-family: 'Lemon', Chalk board, cursive, serif;
+	font-size: 40px;
+  font-weight: bold;
+	font-style: italic;
+	fill: #985538;
+	color: #985538;
+}
+
+
+#main_div > div > div{
+    background-color: rgb(251, 212, 212);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  text-align: center;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  
+}
+
+
+
+
+
+
+/* 
+.star-container {
+    display: flex;
+    width: 350px;
+    flex-direction: row-reverse;
+  }
+  
+ 
+  .star:before {
+    content: "\f005";
+    font-family: fontAwesome;
+    font-size: 60px;
+    position: relative;
+    display: block;
+    color: #aaa;
+  }
+  
+  .star:after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    top: 7px;
+    font-size: 60px;
+    color: gold;
+    opacity: 0;
+  }
+  .star:hover:after,
+  .star:hover ~ .star:after,
+  .star.star__checked:after,
+  .star.star__checked ~ .star:after{
+    opacity: 1;
+  }
+  
+    */
+
+
+
+   
