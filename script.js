@@ -4,12 +4,15 @@ let search_out = '',card_out='';
 let full_data=[];
 
 
-document.addEventListener('DOMContentLoaded',display_items());
-  if(typeof document.hidden !== "undefined") {
+document.addEventListener('load',display_items());
+  
+  function display_items() {
+
+    if(typeof document.hidden !== "undefined") {
 	
-        function chickenRun(){	
         
-        var domSwing = document.getElementById('swinging'), 
+        let centerDom = document.getElementsByClassName('center') 
+        let domSwing = document.getElementById('swinging')
         domShadow = document.getElementById('shadow');
         
             if (document.hidden) {
@@ -19,14 +22,14 @@ document.addEventListener('DOMContentLoaded',display_items());
                 domSwing.style.animationPlayState = "running";
                 domShadow.style.animationPlayState = "running";
             }
-        }
         
-        document.addEventListener('visibilitychange', chickenRun, false);
-        
+             
+            setTimeout(() => {
+               centerDom.remove()
+             }, 3000 )
     }
-
- async function display_items()
-{
+  
+        
 
   
 
